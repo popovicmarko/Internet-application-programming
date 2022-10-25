@@ -1,0 +1,63 @@
+body{
+    margin: 0%;
+    display: grid;
+    align-items: center;
+}
+
+.content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    border: 1px black solid;
+    background-color: rgb(38, 6, 6);
+    perspective: 800px;
+}
+
+#book, #book2,#book3, #book4, #book5, #book6, #book7, #book8 {
+
+    background-image: url(https://wallpaperaccess.com/full/124383.jpg);
+    display: grid;
+    width: 42%;
+    color: white;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    border: solid 1px rgb(214, 208, 208);
+    transform:rotateX(5deg);
+    transition: all .4s linear;
+    box-shadow: 10px 10px 20px black;
+}
+#book7, #book8{
+    margin-top: 4rem;
+}
+
+#book:hover, #book2:hover,#book3:hover, #book4:hover, #book5:hover, #book6:hover, #book7:hover, #book8:hover{
+    border: solid 3px rgb(214, 208, 208);
+    transform: rotateX(0);
+    box-shadow: 20px 20px 20px red;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.top{
+    display: flex;
+    gap: 1.5rem;
+    margin: 1rem;
+}
+
+.bottom{
+    margin: 1rem;
+    font-size: 1.5rem;
+    justify-content: left;
+}
+.n{
+    height: 200px;
+     background-color: rgb(38, 6, 6);;
+}
