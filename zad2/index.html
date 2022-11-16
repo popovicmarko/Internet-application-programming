@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="backend.php" method="POST">
+        <label for="">
+            Ime:
+            <input type="text" name="name">
+        </label>
+        <br>
+        <label for="">
+            Sifra:
+            <input type="password">
+        </label>
+        <br>
+        <label for="">
+            Unesite svoju drzavu:
+            <br>
+            <select name="drzava" id="">
+                <option value="SRB">Srbija</option>
+                <option value="BIH">Bosna</option>
+                <option value="HR">Hrvatska</option>
+            </select>
+        </label>
+        <br>
+        <label for="">
+            Kakve zene prevferiras:
+            <br>
+            Crne
+            <input type="radio" name="tip" value="CRN">
+            Plave
+            <input type="radio" name="tip" value="PLV">
+            Ulfeta boje
+            <input type="radio" name="tip" value="LF">
+        </label>
+        <br>
+        <label for="">
+            Kanali na tv-u 
+            <br>
+            N1
+            <input type="checkbox" value="N1" name="kanal[]">
+            RTS1
+            <input type="checkbox" value="RTS1" name="kanal[]">
+        </label>
+        <br>
+        <input type="submit" name="submit">
+    </form>
+</body>
+</html>
