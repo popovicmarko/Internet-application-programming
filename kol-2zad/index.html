@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="index.php" method="POST">
+            <label for="">
+                <b>Size Of The Cake</b>
+                <br>
+                <input type="radio" name="size" value="20">
+                <label>Round cake 6" - serves 8 people($20)</label>
+                <br>
+                <input type="radio" name="size" value="25">
+                <label>Round cake 8" - serves 12 people($25)</label>
+                <br>
+                <input type="radio" name="size" value="35">
+                <label>Round cake 10" - serves 16 people($35)</label>
+                <br>
+                <input type="radio" name="size" value="75">
+                <label>Round cake 12" - serves 30 people($75)</label>
+            </label>
+        <br>
+        <label for="">
+            <b>Filling</b>
+            <br>
+            <select name="filling" id="">
+                <option value="3">Cherry($3)</option>
+                <option value="5">RasberryCherry($5)</option>
+                <option value="10">Chocholate($10)</option>
+            </select>
+        </label>
+        <br>
+        <label for="">
+            <b>Include candles($5)</b>
+            <input type="checkbox" name="includes[]" value = "5">
+            <br>
+            <b>Include Inscription($20)</b>
+            <input type="checkbox" name="includes[]" value="20">
+        </label>
+        <br>
+        <input type="submit" name="submit">
+    </form>
+    </div>
+</body>
+</html>
